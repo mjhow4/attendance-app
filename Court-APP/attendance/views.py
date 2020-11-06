@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+  --- "This is just some code from the uptact project"
 # Create your views here.
 def list_case_number(request):
     case_number = case_number.objects.all()
