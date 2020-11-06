@@ -11,7 +11,8 @@ class Case(model.Model):
 
 class Attorney(model.Model):
      attorney_name = models.Charfield(max_length=255, null=True)
-     ForeignKey()
+     attorney_name = models.ForeignKey(Attorney,on_delete=models.CASCADE, null=True, related_name="notes")
+
      
 class Plea(model.Model):
      date_requested = models.CharField(max_lenght=255,null=True)
