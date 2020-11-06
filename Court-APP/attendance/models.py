@@ -10,6 +10,7 @@ class Case(model.Model):
      Cont = models.CharField (max_length= 255, null=True, blank=True)   
 
 
+
 class NoteBox(models.Model):
     txt = models.TextField()
     datetime = models.DateTimeField(auto_now_add=True)
